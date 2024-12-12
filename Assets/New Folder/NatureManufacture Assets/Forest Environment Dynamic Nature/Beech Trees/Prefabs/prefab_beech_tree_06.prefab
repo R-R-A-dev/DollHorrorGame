@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 81
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6426938288889461293
 Transform:
@@ -94,7 +94,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 402231074841112697}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.59
   m_Height: 24.057701
   m_Direction: 1
@@ -115,7 +115,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 81
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6409057458661898612
 Transform:
@@ -198,7 +198,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 81
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6308037252056613722
 Transform:
@@ -282,7 +282,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 81
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4170073895821691101
 Transform:
@@ -365,7 +365,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 80
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5464645483336778220
 Transform:
@@ -400,19 +400,19 @@ LODGroup:
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 2
+  - screenRelativeHeight: 0.80144256
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3656357261575558042}
-  - screenRelativeHeight: 1.4
+  - screenRelativeHeight: 0.68733466
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4348421166397924619}
-  - screenRelativeHeight: 0.36593664
+  - screenRelativeHeight: 0.59737515
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 7966449104201464641}
-  - screenRelativeHeight: 0.029421847
+  - screenRelativeHeight: 0.5399175
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6243954337748365146}

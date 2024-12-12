@@ -99,7 +99,7 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.06423491
+  - screenRelativeHeight: 0.55397505
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 9052672573498005429}
@@ -113,7 +113,7 @@ MeshCollider:
   m_GameObject: {fileID: 7322109392035717993}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

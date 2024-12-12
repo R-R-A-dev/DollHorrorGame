@@ -178,7 +178,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5425679599327189057}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.41
   m_Height: 20.186922
   m_Direction: 1
@@ -240,7 +240,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 8251648348253421728}
-  - screenRelativeHeight: 0.027630245
+  - screenRelativeHeight: 0.4374988
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4183358337146118068}

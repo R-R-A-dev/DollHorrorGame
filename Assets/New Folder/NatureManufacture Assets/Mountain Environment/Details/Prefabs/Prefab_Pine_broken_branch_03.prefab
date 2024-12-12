@@ -94,7 +94,7 @@ MeshCollider:
   m_GameObject: {fileID: 3280548333501979317}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -113,7 +113,7 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.065345265
+  - screenRelativeHeight: 0.54732865
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3871423703320407657}

@@ -53,11 +53,11 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4260959136310452915}
-  - screenRelativeHeight: 0.423013
+  - screenRelativeHeight: 0.68415433
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4260959136310452913}
-  - screenRelativeHeight: 0.14035268
+  - screenRelativeHeight: 0.63328576
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4260959136310452919}
@@ -238,7 +238,7 @@ MeshCollider:
   m_GameObject: {fileID: 4260959136308526199}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
