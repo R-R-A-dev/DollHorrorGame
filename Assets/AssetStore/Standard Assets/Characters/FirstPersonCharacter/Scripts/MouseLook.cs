@@ -1,4 +1,5 @@
 using System;
+using UI;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -20,6 +21,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
         private bool m_cursorIsLocked = true;
+
+        [SerializeField] PauseGame pauseGame;
 
         public void Init(Transform character, Transform camera)
         {
@@ -74,11 +77,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void InternalLockUpdate()
         {
-            if(Input.GetKeyUp(KeyCode.Escape))
+            if(Input.GetKeyDown(KeyCode.Escape))
             {
                 m_cursorIsLocked = false;
+                pauseGame.pause();
             }
-            else if(Input.GetMouseButtonUp(0))
+            else if(Input.GetMouseButtonDown(0))
             {
                 m_cursorIsLocked = true;
             }
@@ -87,6 +91,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+
             }
             else if (!m_cursorIsLocked)
             {
@@ -94,6 +99,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.visible = true;
             }
         }
+
 
         Quaternion ClampRotationAroundXAxis(Quaternion q)
         {
@@ -113,3 +119,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
     }
 }
+/*StandarAsseetのFirstPersoncontrollerアセットに追記したコードが意図しない挙動なので質問したいんですが
+ *ファイルをdiscordに送る方法でいいですか
+ * 
+*/
