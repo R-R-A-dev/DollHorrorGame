@@ -20,8 +20,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
-        private bool m_cursorIsLocked = true;
-
+        public bool m_cursorIsLocked = true;
         [SerializeField] PauseGame pauseGame;
 
         public void Init(Transform character, Transform camera)
@@ -77,7 +76,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void InternalLockUpdate()
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 m_cursorIsLocked = false;
                 pauseGame.pause();
@@ -87,13 +86,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_cursorIsLocked = true;
             }
 
-            if (m_cursorIsLocked)
+            if (!pauseGame.paused)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
             }
-            else if (!m_cursorIsLocked)
+            else if(pauseGame.paused)
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -119,7 +118,3 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
     }
 }
-/*StandarAsseetのFirstPersoncontrollerアセットに追記したコードが意図しない挙動なので質問したいんですが
- *ファイルをdiscordに送る方法でいいですか
- * 
-*/

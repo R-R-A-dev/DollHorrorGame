@@ -8,25 +8,24 @@ namespace UI
 {
     public class PauseGame : MonoBehaviour
     {
-        public bool gamePaused = false;
+        public bool paused = false;
         [SerializeField] GameObject pauseMenu;
         [SerializeField] FirstPersonController ThePlayer;
-
+        [SerializeField] MouseLook mouseLook;
 
         public void pause()
         {
-            if (!gamePaused)
+            if (!paused)
             {
                 Time.timeScale = 0;
                 ThePlayer.enabled = false;
-                gamePaused = true;
+                paused = true;
                 pauseMenu.SetActive(true);
             }
             else
             {
                 pauseMenu.SetActive(false);
-                ThePlayer.enabled = true;
-                gamePaused = false;
+                paused = false;
                 Time.timeScale = 1;
             }
 
@@ -34,15 +33,10 @@ namespace UI
 
         public void RestartGameButton()
         {
-            Cursor.visible = false;
-            pauseMenu.SetActive(false);
-            ThePlayer.enabled = true;
-            gamePaused = false;
             Time.timeScale = 1;
-        }
-        public void enVisible()
-        {
-            Cursor.visible = false;
+            ThePlayer.enabled = true;
+            pauseMenu.SetActive(false);
+            paused = false;
         }
     }
 }
