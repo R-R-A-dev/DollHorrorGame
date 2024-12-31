@@ -1,3 +1,4 @@
+using effect.mannequin;
 using effects;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ namespace effect
 {
     public class MannequinEffect : Effect
     {
+        [SerializeField] MannequinMove MannequinMove;
         void Start()
         {
 
@@ -36,30 +38,18 @@ namespace effect
 
         }
 
-        public void Appear()
+        public void Appear(string trgName)
         {
             //分岐で演出を分けて出す
-
-            //演出1 マネキンの出現場所 飼い中電との明滅からの目前に出現
-            if (true)
-            {
-
-            }
-            else if (true)
-            {
-
-            }
-
-            //演出2
-
-
-
+            MannequinMove.MoveEffectHandler(trgName);
         }
 
 
         private void OnTriggerEnter(Collider other)
         {
-            
+            //TODO: プレイヤーの角度を取得
+            Appear(other.gameObject.name);
+            other.gameObject.SetActive(false);
         }
 
     }

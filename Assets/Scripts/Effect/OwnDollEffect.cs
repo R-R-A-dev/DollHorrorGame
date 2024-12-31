@@ -6,6 +6,7 @@ namespace effects
 {
     public class OwnDollEffect : Effect
     {
+        [SerializeField] Light light;
 
         private void Start()
         {
@@ -52,7 +53,7 @@ namespace effects
 
         }
 
-        public void LightFlickering()
+        public void LightFlicking()
         {
 
         }
