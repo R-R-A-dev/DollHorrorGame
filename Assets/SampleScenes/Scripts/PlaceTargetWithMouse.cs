@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 
-namespace UnityStandardAssets.SceneUtils
+namespace UnityStandardAssets.SceneUtil
 {
     public class PlaceTargetWithMouse : MonoBehaviour
     {

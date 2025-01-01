@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4cfe3047017134e9dab47510959911, type: 3}
+  m_Name: Scene Terrain HQ
+  m_EditorClassIdentifier: 
+  active: 1
+  priority: 1
+  maxParallelSceneLoading: 1
+  loadingRange: {x: 1, y: 0, z: 1}
+  useLoadingRangeMin: 0
+  loadingRangeMin: {x: 0, y: 2, z: 2}
+  useUnloadRangeConnect: 0
+  unloadRangeConnect: {fileID: 0}
+  unloadRangeConnectParent: {fileID: 0}
+  deloadingRange: {x: 1, y: 0, z: 1}
+  prefixName: Terrain
+  prefixScene: Scene Terrain HQ
+  path: Assets/NatureManufacture Assets/WorldStreamer/Huge Split Scenes/Scene Terrain
+    HQ/
+  names:
+  - Scene Terrain HQ_x0_z0.unity
+  - Scene Terrain HQ_x0_z1.unity
+  - Scene Terrain HQ_x0_z2.unity
+  - Scene Terrain HQ_x0_z3.unity
+  - Scene Terrain HQ_x0_z4.unity
+  - Scene Terrain HQ_x0_z5.unity
+  - Scene Terrain HQ_x0_z6.unity
+  - Scene Terrain HQ_x0_z7.unity
+  - Scene Terrain HQ_x1_z0.unity
+  - Scene Terrain HQ_x1_z1.unity
+  - Scene Terrain HQ_x1_z2.unity
+  - Scene Terrain HQ_x1_z3.unity
+  - Scene Terrain HQ_x1_z4.unity
+  - Scene Terrain HQ_x1_z5.unity
+  - Scene Terrain HQ_x1_z6.unity
+  - Scene Terrain HQ_x1_z7.unity
+  - Scene Terrain HQ_x2_z0.unity
+  - Scene Terrain HQ_x2_z1.unity
+  - Scene Terrain HQ_x2_z2.unity
+  - Scene Terrain HQ_x2_z3.unity
+  - Scene Terrain HQ_x2_z4.unity
+  - Scene Terrain HQ_x2_z5.unity
+  - Scene Terrain HQ_x2_z6.unity
+  - Scene Terrain HQ_x2_z7.unity
+  - Scene Terrain HQ_x3_z0.unity
+  - Scene Terrain HQ_x3_z1.unity
+  - Scene Terrain HQ_x3_z2.unity
+  - Scene Terrain HQ_x3_z3.unity
+  - Scene Terrain HQ_x3_z4.unity
+  - Scene Terrain HQ_x3_z5.unity
+  - Scene Terrain HQ_x3_z6.unity
+  - Scene Terrain HQ_x3_z7.unity
+  - Scene Terrain HQ_x4_z0.unity
+  - Scene Terrain HQ_x4_z1.unity
+  - Scene Terrain HQ_x4_z2.unity
+  - Scene Terrain HQ_x4_z3.unity
+  - Scene Terrain HQ_x4_z4.unity
+  - Scene Terrain HQ_x4_z5.unity
+  - Scene Terrain HQ_x4_z6.unity
+  - Scene Terrain HQ_x4_z7.unity
+  - Scene Terrain HQ_x5_z0.unity
+  - Scene Terrain HQ_x5_z1.unity
+  - Scene Terrain HQ_x5_z2.unity
+  - Scene Terrain HQ_x5_z3.unity
+  - Scene Terrain HQ_x5_z4.unity
+  - Scene Terrain HQ_x5_z5.unity
+  - Scene Terrain HQ_x5_z6.unity
+  - Scene Terrain HQ_x5_z7.unity
+  - Scene Terrain HQ_x6_z0.unity
+  - Scene Terrain HQ_x6_z1.unity
+  - Scene Terrain HQ_x6_z2.unity
+  - Scene Terrain HQ_x6_z3.unity
+  - Scene Terrain HQ_x6_z4.unity
+  - Scene Terrain HQ_x6_z5.unity
+  - Scene Terrain HQ_x6_z6.unity
+  - Scene Terrain HQ_x6_z7.unity
+  - Scene Terrain HQ_x7_z0.unity
+  - Scene Terrain HQ_x7_z1.unity
+  - Scene Terrain HQ_x7_z2.unity
+  - Scene Terrain HQ_x7_z3.unity
+  - Scene Terrain HQ_x7_z4.unity
+  - Scene Terrain HQ_x7_z5.unity
+  - Scene Terrain HQ_x7_z6.unity
+  - Scene Terrain HQ_x7_z7.unity
+  xSplitIs: 1
+  ySplitIs: 0
+  zSplitIs: 1
+  xSize: 500
+  ySize: 0
+  zSize: 500
+  xLimitsx: 0
+  xLimitsy: 7
+  yLimitsx: 0
+  yLimitsy: 0
+  zLimitsx: 0
+  zLimitsy: 7
+  xLimitsScenex: 0
+  xLimitsSceney: 7
+  yLimitsScenex: 0
+  yLimitsSceney: 0
+  zLimitsScenex: 0
+  zLimitsSceney: 7
+  collapsed: 1
+  layerNumber: 0
+  color: {r: 1, g: 0, b: 0, a: 1}
+  showDebug: 1
+  xLoadingLimity: 15
+  xLoadingLimitx: -8
+  xLoadingRange: 24
+  yLoadingLimity: 0
+  yLoadingLimitx: 0
+  yLoadingRange: 1
+  zLoadingLimity: 15
+  zLoadingLimitx: -8
+  zLoadingRange: 24
+  xPos: 3
+  yPos: 0
+  zPos: 3
+  currentlySceneLoading: 0
+  loadedScenes:
+  - posX: 3
+    posY: 0
+    posZ: 4
+    sceneName: Scene Terrain HQ_x3_z4
+    scene:
+      m_Handle: -881436
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 4
+    sceneName: Scene Terrain HQ_x4_z4
+    scene:
+      m_Handle: -881782
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 5
+    sceneName: Scene Terrain HQ_x4_z5
+    scene:
+      m_Handle: -881870
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 5
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 3
+    posY: 0
+    posZ: 5
+    sceneName: Scene Terrain HQ_x3_z5
+    scene:
+      m_Handle: -882024
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 5
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 2
+    posY: 0
+    posZ: 5
+    sceneName: Scene Terrain HQ_x2_z5
+    scene:
+      m_Handle: -882172
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 2
+    basePosY: 0
+    basePosZ: 5
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 2
+    posY: 0
+    posZ: 4
+    sceneName: Scene Terrain HQ_x2_z4
+    scene:
+      m_Handle: -882320
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 2
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 2
+    posY: 0
+    posZ: 3
+    sceneName: Scene Terrain HQ_x2_z3
+    scene:
+      m_Handle: -882508
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 2
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 3
+    posY: 0
+    posZ: 3
+    sceneName: Scene Terrain HQ_x3_z3
+    scene:
+      m_Handle: -882676
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 3
+    sceneName: Scene Terrain HQ_x4_z3
+    scene:
+      m_Handle: -882764
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 2
+    posY: 0
+    posZ: 2
+    sceneName: Scene Terrain HQ_x2_z2
+    scene:
+      m_Handle: -892580
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 2
+    basePosY: 0
+    basePosZ: 2
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 3
+    posY: 0
+    posZ: 2
+    sceneName: Scene Terrain HQ_x3_z2
+    scene:
+      m_Handle: -892726
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 2
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 2
+    sceneName: Scene Terrain HQ_x4_z2
+    scene:
+      m_Handle: -892850
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 2
+    sceneCollectionManager: {fileID: 11400000}

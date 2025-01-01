@@ -1,0 +1,444 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4cfe3047017134e9dab47510959911, type: 3}
+  m_Name: Scene Huge
+  m_EditorClassIdentifier: 
+  active: 1
+  priority: 3
+  maxParallelSceneLoading: 1
+  loadingRange: {x: 5, y: 0, z: 5}
+  useLoadingRangeMin: 0
+  loadingRangeMin: {x: 2, y: 2, z: 2}
+  useUnloadRangeConnect: 0
+  unloadRangeConnect: {fileID: 0}
+  unloadRangeConnectParent: {fileID: 0}
+  deloadingRange: {x: 5, y: 0, z: 5}
+  prefixName: Huge
+  prefixScene: Scene Huge
+  path: Assets/NatureManufacture Assets/WorldStreamer/Huge Split Scenes/Scene Huge/
+  names: []
+  xSplitIs: 1
+  ySplitIs: 0
+  zSplitIs: 1
+  xSize: 500
+  ySize: 0
+  zSize: 500
+  xLimitsx: 0
+  xLimitsy: 7
+  yLimitsx: 0
+  yLimitsy: 0
+  zLimitsx: 2
+  zLimitsy: 5
+  xLimitsScenex: 0
+  xLimitsSceney: 7
+  yLimitsScenex: 0
+  yLimitsSceney: 0
+  zLimitsScenex: 2
+  zLimitsSceney: 5
+  collapsed: 1
+  layerNumber: 2
+  color: {r: 0.17368412, g: 0, b: 1, a: 1}
+  showDebug: 0
+  xLoadingLimity: 15
+  xLoadingLimitx: -8
+  xLoadingRange: 24
+  yLoadingLimity: 0
+  yLoadingLimitx: 0
+  yLoadingRange: 1
+  zLoadingLimity: 15
+  zLoadingLimitx: -8
+  zLoadingRange: 24
+  xPos: 3
+  yPos: 0
+  zPos: 3
+  currentlySceneLoading: 0
+  loadedScenes:
+  - posX: 3
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x3_z4
+    scene:
+      m_Handle: -881700
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x4_z4
+    scene:
+      m_Handle: -881848
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 5
+    sceneName: Scene Huge_x4_z5
+    scene:
+      m_Handle: -882002
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 5
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 3
+    posY: 0
+    posZ: 5
+    sceneName: Scene Huge_x3_z5
+    scene:
+      m_Handle: -882150
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 5
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 2
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x2_z4
+    scene:
+      m_Handle: -882298
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 2
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 3
+    posY: 0
+    posZ: 3
+    sceneName: Scene Huge_x3_z3
+    scene:
+      m_Handle: -882486
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 3
+    sceneName: Scene Huge_x4_z3
+    scene:
+      m_Handle: -882576
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 5
+    posY: 0
+    posZ: 3
+    sceneName: Scene Huge_x5_z3
+    scene:
+      m_Handle: -882742
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 5
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 5
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x5_z4
+    scene:
+      m_Handle: -882908
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 5
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 1
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x1_z4
+    scene:
+      m_Handle: -882994
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 1
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 1
+    posY: 0
+    posZ: 3
+    sceneName: Scene Huge_x1_z3
+    scene:
+      m_Handle: -883120
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 1
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 3
+    posY: 0
+    posZ: 2
+    sceneName: Scene Huge_x3_z2
+    scene:
+      m_Handle: -883226
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 3
+    basePosY: 0
+    basePosZ: 2
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 4
+    posY: 0
+    posZ: 2
+    sceneName: Scene Huge_x4_z2
+    scene:
+      m_Handle: -883312
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 4
+    basePosY: 0
+    basePosZ: 2
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 5
+    posY: 0
+    posZ: 2
+    sceneName: Scene Huge_x5_z2
+    scene:
+      m_Handle: -883646
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 5
+    basePosY: 0
+    basePosZ: 2
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 6
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x6_z4
+    scene:
+      m_Handle: -886280
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 6
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 0
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x0_z4
+    scene:
+      m_Handle: -886386
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 0
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 7
+    posY: 0
+    posZ: 3
+    sceneName: Scene Huge_x7_z3
+    scene:
+      m_Handle: -886472
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 7
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: -1
+    posY: 0
+    posZ: 3
+    sceneName: Scene Huge_x7_z3
+    scene:
+      m_Handle: -886538
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 7
+    basePosY: 0
+    basePosZ: 3
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: 8
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x0_z4
+    scene:
+      m_Handle: -886624
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 0
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
+  - posX: -2
+    posY: 0
+    posZ: 4
+    sceneName: Scene Huge_x6_z4
+    scene:
+      m_Handle: -886730
+    sceneGo: {fileID: 0}
+    loaded: 1
+    loadingFinished: 1
+    posXLimitMove: 0
+    xDeloadLimit: 0
+    posYLimitMove: 0
+    yDeloadLimit: 0
+    posZLimitMove: 0
+    zDeloadLimit: 0
+    basePosX: 6
+    basePosY: 0
+    basePosZ: 4
+    sceneCollectionManager: {fileID: 11400000}
