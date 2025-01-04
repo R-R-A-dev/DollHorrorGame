@@ -3,6 +3,7 @@ using effects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace effect
 {
@@ -28,9 +29,9 @@ namespace effect
 
         }
 
-        public void Falling()
+        public void Falling(string trgName, Transform rotate)
         {
-
+           
         }
 
         public void Grab()
@@ -38,18 +39,17 @@ namespace effect
 
         }
 
-        public void Appear(string trgName)
+        public void Appear(string trgName, Transform rotate)
         {
-            //分岐で演出を分けて出す
-            MannequinMove.MoveEffectHandler(trgName);
+            
         }
 
 
         private void OnTriggerEnter(Collider other)
         {
-            //TODO: プレイヤーの角度を取得
-            Appear(other.gameObject.name);
-            other.gameObject.SetActive(false);
+            //TODO: トリガーの判定消す
+            MannequinMove.MoveEffectHandler(other.gameObject.name, GetComponent<Transform>());
+
         }
 
     }

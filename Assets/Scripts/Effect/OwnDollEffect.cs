@@ -18,6 +18,11 @@ namespace effects
             
         }
 
+        void OwnDollEffectHandler()
+        {
+
+        }
+
         public override void PlayEffect()
         {
 
@@ -55,12 +60,12 @@ namespace effects
 
         public void LightFlicking()
         {
-
+            
         }
 
         public void PoorVisibility()
         {
-
+            //ŽŸ‚É‚â‚é
         }
 
         public void FootSound()
@@ -71,6 +76,11 @@ namespace effects
         public void LeadDoll()
         {
 
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            //OwnDollEffectHandler();
         }
     }
 }

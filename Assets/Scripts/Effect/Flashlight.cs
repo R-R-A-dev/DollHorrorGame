@@ -24,12 +24,4 @@ public class Flashlight : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, followSpeed * Time.deltaTime);
     }
-    /// <summary>
-    /// 懐中電灯の明滅演出
-    /// </summary>
-    public void LightFlicking()
-    {
-        //TODO: ライト明滅 確率パターン
-
-    }
 }

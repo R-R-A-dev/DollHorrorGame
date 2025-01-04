@@ -6,84 +6,111 @@ namespace effect.mannequin
 {
     public class MannequinMove : MonoBehaviour
     {
-        //出現エフェクト
-        [SerializeField] GameObject AppearTrg;
-        [SerializeField] ChildObject[] AppearMannequins;
+        [SerializeField] ChildObject[] AppearMannequins;//マネキンの出現場所
+        [SerializeField] Flashlight flashlight;//懐中電灯
         [SerializeField] Light light;
-        [SerializeField] Flashlight flashlight;
-        private string[] AppearTrgName;
+        [SerializeField] ChildObject[] FallingMannequins;//落下マネキン
+        [SerializeField] ChildObject[] FallingAppearMannequins;//落下マネキン以外の出現
+        
+        private string[] AppearTrgName;//トリガー名
+        private static int arrayNum0 = 0;
+        private static int arrayNum1 = 1;
+        private static int arrayNum2 = 2;
+        private static int arrayNum3 = 3;
+        private int AppearAngle;//出現するマネキンの角度
 
         private void Start()
         {
             AppearTrgName = new string[]
-            { "MannequinAppearTrg", "AppearTrg2", "AppearTrg3",
+            { "MannequinAppearTrg", "MannequinFallingTrg", "AppearTrg3",
                 };
         }
 
-        public void MoveEffectHandler(string trgName)
+        public void MoveEffectHandler(string trgName,Transform rotate)
         {
-            StartCoroutine(Appear(trgName));
+            AppearAngle = AppearAngleJudge(rotate);
+            Appear(trgName);
+            FallingMannequin(trgName);
+
         }
         /// <summary>
-        /// 演出 マネキンの出現場所 飼い中電との明滅からの目前に出現
+        /// 演出 マネキンの出現場所 懐中電灯の明滅からの目前に出現
         /// </summary>
         /// <param name="trgName"></param>
-        public IEnumerator Appear(string trgName)
+        void Appear(string trgName)
         {
-            //TODO: 実装　方向ごとの出現場所と演出の内容
-            //内容の記述
-
-            if (trgName == AppearTrgName[0])
+            if (trgName == AppearTrgName[arrayNum0])
             {
                 //懐中電灯の明滅
-                flashlight.LightFlicking();
-                //プレイヤーの向いている角度からマネキンの出現
-                //AppearAngleJudge();
-
-
-                light.enabled = false;
-                yield return new WaitForSeconds(0.2f);
-                light.enabled = true;
-                yield return new WaitForSeconds(0.3f);
-                light.enabled = false;
-                yield return new WaitForSeconds(0.2f);
-                light.enabled = true;
-                AppearMannequins[0].MannequinArray[0].SetActive(true);
-
+                //StartCoroutine(LightFlicking(AppearPos));
             }
-            else if (trgName == AppearTrgName[1])
-            {
-                Debug.Log(trgName);
-            }
-            /*実装に必要な物
-             * トリガー
-             * マネキンの場所
-             * 飼い中電との明滅
-             * 
-             * 流れ
-             * トリガー踏む　トリガーの場所によって登場場所を変える
-             * 懐中電灯明滅と同時にマネキン出現
-             * 
-            */
         }
-        //演出を複数持たせる
+
+        /// <summary>
+        /// 懐中電灯の明滅演出　マネキンの出現
+        /// </summary>
+        IEnumerator LightFlickingAppear(int AppearPos)
+        {
+            //  ライト明滅マネキン出現
+            light.enabled = false;
+            yield return new WaitForSeconds(0.05f);
+            light.enabled = true;
+            AppearMannequins[AppearPos].MannequinArray[arrayNum0].SetActive(true);
+            yield return new WaitForSeconds(0.05f);
+            light.enabled = false;
+            yield return new WaitForSeconds(0.05f);
+            light.enabled = true;
+            yield return new WaitForSeconds(0.05f);
+            light.enabled = false;
+            AppearMannequins[AppearPos].MannequinArray[arrayNum0].SetActive(false);
+            yield return new WaitForSeconds(0.05f);
+            light.enabled = true;
+            AppearMannequins[AppearPos].MannequinArray[arrayNum1].SetActive(true);
+        }
+
+        /// <summary>
+        /// マネキンの落下演出
+        /// </summary>
+        /// <param name="trgName"></param>
+        void FallingMannequin(string trgName)
+        {
+            if (trgName == AppearTrgName[arrayNum1])
+            {
+                for (int i = 0; i < FallingMannequins.Length; i++)
+                {
+                    FallingMannequins[AppearAngle].MannequinArray[i].SetActive(true);
+                }
+                for (int i = 0; i < FallingAppearMannequins.Length; i++)
+                {
+                    FallingAppearMannequins[AppearAngle].MannequinArray[i].SetActive(true);
+                }
+            }
+        }
+
 
         /// <summary>
         /// 角度によって出現させるマネキンの位置を変える
         /// </summary>
-        public void AppearAngleJudge(Transform rotate)
+        int AppearAngleJudge(Transform rotate)
         {
+            float angle = rotate.eulerAngles.y;
             //表示も確立
+            if (90> angle && angle > 0) return arrayNum0;
+            else if (180> angle && angle > 90) return arrayNum1;
+            else if (270> angle && angle > 180) return arrayNum2;
+            else if (359.9> angle && angle>270) return arrayNum3;
 
+            return 0;
+        }
+
+
+
+        [System.Serializable]
+        public class ChildObject
+        {
+            public GameObject[] MannequinArray;
         }
 
     }
-
-    [System.Serializable]
-    public class ChildObject
-    {
-        public GameObject[] MannequinArray;
-    }
-
 }
 
