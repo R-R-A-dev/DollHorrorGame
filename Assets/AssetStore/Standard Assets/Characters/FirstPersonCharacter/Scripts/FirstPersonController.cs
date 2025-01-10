@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -44,6 +45,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
         public bool fpsPause = true;
 
+        public static bool freezeTrg = false;
+
         // Use this for initialization
         private void Start()
         {
@@ -63,6 +66,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            if (freezeTrg) return;
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
@@ -96,6 +100,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
+            if (freezeTrg) return;
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at

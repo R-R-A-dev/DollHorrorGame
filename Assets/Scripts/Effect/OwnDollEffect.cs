@@ -65,7 +65,8 @@ namespace effects
 
         public void PoorVisibility()
         {
-            //ŽŸ‚É‚â‚é
+            //TODO: ŽŸ‚É‚â‚é
+
         }
 
         public void FootSound()
