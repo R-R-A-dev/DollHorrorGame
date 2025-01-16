@@ -8,7 +8,7 @@ public class PlayerFollow : MonoBehaviour
 {
     #region
     [SerializeField] float speed = 3.0f; // 移動速度
-    [SerializeField] float stopDistance = 1.4f; // 停止距離
+    [SerializeField] float stopDistance = 1.6f; // 停止距離
     [SerializeField] float rotationSpeed = 5.0f; // 回転の滑らかさ
     [SerializeField] GameObject fpsController; // プレイヤーオブジェクト取得
     [SerializeField] GameObject Mannequin;//マネキン
