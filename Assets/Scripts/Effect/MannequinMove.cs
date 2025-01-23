@@ -12,7 +12,7 @@ namespace effect.mannequin
         [SerializeField] ChildObject[] FallingMannequins;//落下マネキン
         [SerializeField] ChildObject[] FallingAppearMannequins;//落下マネキン以外の出現
         
-        private string[] AppearTrgName;//トリガー名
+        private string[] appearTrgName;//トリガー名
         private static int arrayNum0 = 0;
         private static int arrayNum1 = 1;
         private static int arrayNum2 = 2;
@@ -21,7 +21,7 @@ namespace effect.mannequin
 
         private void Start()
         {
-            AppearTrgName = new string[]
+            appearTrgName = new string[]
             { "MannequinAppearTrg", "MannequinFallingTrg", "AppearTrg3",
                 };
         }
@@ -39,7 +39,7 @@ namespace effect.mannequin
         /// <param name="trgName"></param>
         void Appear(string trgName)
         {
-            if (trgName == AppearTrgName[arrayNum0])
+            if (trgName == appearTrgName[arrayNum0])
             {
                 //懐中電灯の明滅
                 //StartCoroutine(LightFlicking(AppearPos));
@@ -74,13 +74,13 @@ namespace effect.mannequin
         /// <param name="trgName"></param>
         void FallingMannequin(string trgName)
         {
-            if (trgName == AppearTrgName[arrayNum1])
+            if (trgName == appearTrgName[arrayNum1])
             {
-                for (int i = 0; i < FallingMannequins.Length; i++)
+                for (int i = 0; i < FallingMannequins[AppearAngle].MannequinArray.Length; i++)
                 {
                     FallingMannequins[AppearAngle].MannequinArray[i].SetActive(true);
                 }
-                for (int i = 0; i < FallingAppearMannequins.Length; i++)
+                for (int i = 0; i < FallingAppearMannequins[AppearAngle].MannequinArray.Length; i++)
                 {
                     FallingAppearMannequins[AppearAngle].MannequinArray[i].SetActive(true);
                 }
@@ -113,4 +113,7 @@ namespace effect.mannequin
 
     }
 }
-
+/*追いかけられる→マネキンの出現→止まる→一定の距離で消える→正面で出現襲う
+ *写真演出
+ * 
+*/

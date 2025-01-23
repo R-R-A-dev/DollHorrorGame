@@ -9,6 +9,8 @@ namespace effect
 {
     public class MannequinEffect : Effect
     {
+
+
         [SerializeField] MannequinMove MannequinMove;
         void Start()
         {
@@ -31,7 +33,7 @@ namespace effect
 
         public void Falling(string trgName, Transform rotate)
         {
-           
+
         }
 
         public void Grab()
@@ -41,7 +43,7 @@ namespace effect
 
         public void Appear(string trgName, Transform rotate)
         {
-            
+
         }
 
 
@@ -49,9 +51,14 @@ namespace effect
         {
             //TODO: ÉgÉäÉKÅ[ÇÃîªíËè¡Ç∑
             MannequinMove.MoveEffectHandler(other.gameObject.name, GetComponent<Transform>());
-
         }
 
+    }
+
+    [System.Serializable]
+    public class ChildObject
+    {
+        public GameObject[] MannequinArray;
     }
 }
 
