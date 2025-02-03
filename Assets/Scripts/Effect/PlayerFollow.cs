@@ -7,7 +7,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class PlayerFollow : MonoBehaviour
 {
     #region
-    [SerializeField] float speed = 3.0f; // 移動速度
+    [SerializeField] float speed = 5.0f; // 移動速度
     [SerializeField] float stopDistance = 1.6f; // 停止距離
     [SerializeField] float rotationSpeed = 5.0f; // 回転の滑らかさ
     [SerializeField] GameObject fpsController; // プレイヤーオブジェクト取得
@@ -65,13 +65,14 @@ public class PlayerFollow : MonoBehaviour
         if (isAppear)
         {
             appearElapseTime += Time.deltaTime;
-            if (appearElapseTime > 20f)
+            if (appearElapseTime > 30f)
             {
                 isSoundPlaying = true;
                 chase = true;
                 chaseObj.SetActive(false);
                 isAppear = false;
                 isRunning = false;
+                backMannequin.SetActive(false); 
             }
         }
         // プレイヤーが敵を見ているかを判定
@@ -292,7 +293,7 @@ public class PlayerFollow : MonoBehaviour
 }
 
 /*
- * 音声と演出の実装
- * cinemachineVirtualCameraが有効非有効を繰り返す
- * マウスカーソル消す
+ * 音声と演出全般の実装
+ * 蚊柱
+ * 
 */
