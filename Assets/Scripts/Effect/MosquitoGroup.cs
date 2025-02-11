@@ -50,7 +50,7 @@ public class MosquitoGroup : MonoBehaviour
                 Random.Range(-100f, 100f)
             );
 
-            individualSpeeds[i] = 500 * baseSpeed + Random.Range(-speedVariation, speedVariation);
+            individualSpeeds[i] = 1000 * baseSpeed + Random.Range(-speedVariation, speedVariation);
         }
     }
 
