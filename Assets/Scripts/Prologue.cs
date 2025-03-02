@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Prologue : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Prologue : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(StartPrologue());
+        
     }
 
     // Update is called once per frame
@@ -54,14 +55,25 @@ public class Prologue : MonoBehaviour
         }
         if(currentBook.Pages.Length == currentIndex)
         {
-            prologueScreen.SetActive(false);
+            prologueTextObj.SetActive(false);
+            nextText.SetActive(false);
             yield return new WaitForSeconds(20);
-            //フェーとアウト
+            //フェードアウト
+            yield return new WaitForSeconds(5f);
+
+            FirstPersonController.freezeTrg = false;
+            yield return new WaitForSeconds(1f);
+            prologueScreen.SetActive(false);
             prologueScreenFade.SetActive(true);
+
             yield return new WaitForSeconds(1);
             prologueScreenFade.SetActive(false);
+
+
 
         }
 
     }
 }
+/*テキストを送り終わった後に操作可能になるまでの間ができる
+*/

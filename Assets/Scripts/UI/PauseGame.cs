@@ -38,6 +38,11 @@ namespace UI
             pauseMenu.SetActive(false);
             paused = false;
         }
+
+        public void BackTitle()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("TitleScene");
+        }
     }
 }
 

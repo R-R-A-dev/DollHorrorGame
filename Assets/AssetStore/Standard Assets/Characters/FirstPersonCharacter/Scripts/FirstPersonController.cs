@@ -47,7 +47,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_waterFlg = false;
         public bool fpsPause = true;
 
-        public static bool freezeTrg = true;
+        public static bool freezeTrg = false;
         public static bool stopHeadBob = true;
 
         // Use this for initialization

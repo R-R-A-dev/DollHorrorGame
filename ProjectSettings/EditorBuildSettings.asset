@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 03454ae6ecfa8814a916379cf0c45359
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/NatureManufacture Assets/WorldStreamer/SplitScenesGameScene/Scene
       prefix_1/Scene prefix_1_x0_z0.unity
     guid: 30d3793dea197c24f88b432b1fe76941
