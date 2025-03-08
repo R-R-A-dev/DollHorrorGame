@@ -90,6 +90,16 @@ namespace effects
                     vortex.angle = Mathf.Lerp(0f, 360f, t);
                 }
             }
+
+            if (isTwirl)
+            {
+                twirlElapsedTime += Time.deltaTime;
+                if (twirlElapsedTime <= twirlDuration)
+                {
+                    float t = twirlElapsedTime / twirlDuration;
+                    twirl.angle = Mathf.Lerp(0f, 360f, t);
+                }
+            }
         }
 
         void OwnDollEffectHandler()
