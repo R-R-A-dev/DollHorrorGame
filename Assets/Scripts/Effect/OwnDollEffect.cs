@@ -23,12 +23,14 @@ namespace effects
         [SerializeField] AudioSource mosquitoSound;//蚊の音
         [SerializeField] AudioSource zowawa;//ゾワワ
         [SerializeField] AudioSource ghostsGrumbleMan;//幽霊のうめき声(男)
+        [SerializeField] AudioSource environment;
         [SerializeField] GameObject[] cockroaches;//ゴキブリ
         [SerializeField] GameObject fpsController;//プレイヤー
         [SerializeField] Transform target;//見る方向
         [SerializeField] GameObject wall;//見る方向
         [SerializeField] PostProcessVolume volume;
 
+        private float environmentVolume;
 
         public float fishEyeDuration = 3f;
         private float fishEyeElapsedTimeFisheye = 0f;
@@ -46,7 +48,7 @@ namespace effects
 
         private float vortexDuration = 10f;
         private float vortexElapsedTime = 0f;
-        private bool isVortex= false;
+        private bool isVortex = false;
         #endregion
 
 
@@ -159,43 +161,66 @@ namespace effects
                 trg.SetActive(false);
                 applyShaderToCamera.enabled = true;
                 ghostsGrumbleFX.Play();
+                environmentSoundOn();
                 wall.SetActive(true);
                 yield return new WaitForSeconds(20f);
+                environmentSoundOff();
                 applyShaderToCamera.enabled = false;
                 ghostsGrumbleFX.Stop();
                 wall.SetActive(false);
-                
+
             }
             else if (trgName == "FishEyeVisibleTrg")
             {
                 trg.SetActive(false);
                 isFishEye = true;
-                yield return new WaitForSeconds(1f);
+                environmentSoundOn();
                 babyFX.Play();
-                yield return new WaitForSeconds(9f);
+                yield return new WaitForSeconds(10f);
+                environmentSoundOff();
                 isFishEye = false;
                 babyFX.Stop();
                 fishEye.strengthY = 0f;
                 fishEye.strengthX = 0f;
-                
+
             }
             else if (trgName == "TwirlVisibleTrg")
             {
                 isTwirl = true;
                 trg.SetActive(false);
+                environmentSoundOn();
+                ghostAh2FX.Play();
                 yield return new WaitForSeconds(10f);
+                environmentSoundOff();
+                ghostAh2FX.Stop();
                 isTwirl = false;
             }
             else if (trgName == "VortexVisibleTrg")
             {
                 isVortex = true;
                 trg.SetActive(false);
+                ghostsGrumbleMan.Play();
+                environmentSoundOn();
                 yield return new WaitForSeconds(10f);
+                environmentSoundOff();
+                ghostsGrumbleMan.Stop();
                 isVortex = false;
                 vortex.enabled = false;
             }
-            
+
         }
+
+        private void environmentSoundOff()
+        {
+            environment.volume = environmentVolume;
+        }
+        private void environmentSoundOn()
+        {
+            environmentVolume = environment.volume;
+            environment.volume = 0f;
+        }
+
+
         public void FootSound()
         {
 

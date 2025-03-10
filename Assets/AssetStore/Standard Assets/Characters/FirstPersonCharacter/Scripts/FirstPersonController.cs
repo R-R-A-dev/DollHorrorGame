@@ -51,6 +51,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public static bool freezeTrg = false;
         public static bool stopHeadBob = true;
 
+        void Awake()
+        {
+            if (SceneManager.GetActiveScene().name == "TitleScene")
+            {
+                Destroy(gameObject);
+            }
+        }
+
         // Use this for initialization
         private void Start()
         {

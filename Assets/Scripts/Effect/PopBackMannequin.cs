@@ -15,7 +15,12 @@ public class PopBackMannequin : MonoBehaviour
     [SerializeField] GameObject fade;
     [SerializeField] GameObject chaseObj;
     [SerializeField] GameObject chaseTrg;
-    public float distanceBehind = 1.6f; // プレイヤーからの距離
+    [SerializeField] AudioSource impactSfx;
+    [SerializeField] AudioSource environmentSfx;
+
+    private float environmentVolume;
+
+    public float distanceBehind = 2f; // プレイヤーからの距離
     public float heightOffset = 0.0f; // 高さのオフセット
     public float followSpeed = 20.0f; // オブジェクトが追従する速度
     public bool chase = true;
@@ -85,16 +90,19 @@ public class PopBackMannequin : MonoBehaviour
 
                 // 初期回転から目標回転へ補間
                 fpsController.transform.rotation = Quaternion.Lerp(initialRotation, targetRotation, t);
+
                 // 回転終了の判定
                 if (t >= 1.0f)
                 {
                     isRotating = false;
+                    environmentSoundOn();
+                    impactSfx.Play();
+                    fade.SetActive(true);
                 }
             }
             else
             {// プレイヤーが近づいたら捕まえる
                 Grab();
-                fade.SetActive(true);
                 StartCoroutine(ShakeCamera());
             }
         }
@@ -125,6 +133,16 @@ public class PopBackMannequin : MonoBehaviour
             Quaternion groundRotation = Quaternion.FromToRotation(target.transform.up, terrainNormal) * target.transform.rotation;
             target.transform.rotation = Quaternion.Lerp(target.transform.rotation, groundRotation, rotationSpeed * Time.deltaTime);
         }
+    }
+
+    private void environmentSoundOff()
+    {
+        environmentSfx.volume = environmentVolume;
+    }
+    private void environmentSoundOn()
+    {
+        environmentVolume = environmentSfx.volume;
+        environmentSfx.volume = 0f;
     }
 
     /// <summary>
@@ -160,8 +178,7 @@ public class PopBackMannequin : MonoBehaviour
         chaseObj.SetActive(false);
         chaseTrg.SetActive(false);
         this.enabled = false;
-
-
+        environmentSoundOff();
     }
 
     void Grab()

@@ -22,6 +22,17 @@ public class EndTimelineSceneTransition : MonoBehaviour
         SceneManager.LoadScene(titleSceneName);
     }
 
+    //FirstPersonControllerのスクリプトをFindして破棄
+    //シーン遷移
+    public void SceneTransition()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene(titleSceneName);
+    }
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -33,8 +44,6 @@ public class EndTimelineSceneTransition : MonoBehaviour
 
             if (timeline != null)
             {
-                ownDoll.SetActive(false); 
-                movieOwnDoll.SetActive(true);
                 FirstPersonController.freezeTrg = true; // プレイヤーの動きを止める
                 timeline.Play(); // Timelineを再生
             }
